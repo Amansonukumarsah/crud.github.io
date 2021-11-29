@@ -1,0 +1,24 @@
+{% extends 'core/basic.html' %}
+{% load static %}
+{% block corecss %}
+<div class="mt-5">
+  <div class="text-center">
+     <img src="{% static 'core/image1/education-future.jpg' %}" alt="profile" class="img-thumbanil" width="200px" height="200px">  
+  </div>
+  <div class="mt-5 mx-5">
+  <h3 class="font-weight-bold text-white mt-5 st-style">Hello,</h3>
+  <div class="px-4" style="line-height:2rem;" text-justify>
+    <p class="test-indent:100px;">
+      <b class="text-warning">For developing a nation</b>, it is important to provide <b class="test-warning">education</b> to each one of living in the society. The key to a developed nation is connected with the education system of a society. Literacy is part of education. In developing countries, education is a tool for the social justice and social well-being of people.
+    </p>
+    <p>
+      <b class="text-warning color:yellow;">Educational Institutions are established for availing education to students</b>. Teachers are an integral part of the education system. they put their efforts into educating children and youths. Sadly, education is also suffering from class conflict. <b class="test-warning">Poor are not blessed with education</b>. The rural education system is degrading day by day due to various social and financial reasons. There must be a common agenda made for availing education to everyone.
+    </p>
+  </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}"  class="btn btn-outline-warning my-3 mt-5" value="hire me">hire me</a>
+    <a href="{% url 'contact' %}"  class="btn btn-outline-info my-3 mt-5" value="hire me">contact</a>
+  </div>
+</div>
+{% endblock corecss%}

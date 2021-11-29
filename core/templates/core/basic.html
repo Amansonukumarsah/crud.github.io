@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+    <title>Home</title>
+</head>
+<body>
+    <div class= "container-fluid" style= "background-color:grey;" >
+        <div class="row">
+            <div class= "col-md-2">
+                {% include 'core/sidebar.html' %}
+            </div>
+        <div class= "col-md-10"> 
+           {% block corecss %} {% endblock corecss %}
+        </div>
+        </div>
+    <script src="{% static 'core/js/jquerry.js' %}"></script>
+    <script src="{% static 'core/js/popper.js' %}"></script>
+    <script src="{% static 'core/js/all.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

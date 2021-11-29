@@ -1,0 +1,14 @@
+{%load static %}
+<div class="text-center">
+    <img src="{% static 'core/image/education-logo.jpg' %}" alt="profilepic" class="rounded-circle mt-5",width="100px" height="100px">
+    <h2 class="st-style mt-4"> EDUCATION </h2>
+    <hr class="border-light"></hr>
+    </div> 
+<div>
+    <nav class="text-center mt-3">
+        <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+        <a href="{% url 'service' %}" class="nav-link {{service}}">services</a>
+        <a href="{% url 'skills' %}" class="nav-link {{skills}}">skills</a>
+        <a href="{% url 'contact' %}" class="nav-link {{contact}}">contact</a>
+    </nav>
+</div>

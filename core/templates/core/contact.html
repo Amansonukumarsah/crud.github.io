@@ -1,0 +1,41 @@
+{% extends 'core/basic.html' %}
+{% load static %}
+ {% block corecss %} 
+<div class="container">
+    <h3 class="text-warning  border-bottom mt-5">Contact us</h3>
+    <div class="row text-white">
+        <p class="max-auto mb-5 text-center">
+                Please fill the form without any hestiate ,
+                We are helping you any time ,
+        </p>
+        <div class="col-mb-9 mb-5">
+            <form action="">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <label for="inputname">Your name</label>
+                            <input type="text" class="form-control" id="inputname"/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputemail">email*</label>
+                            <input type="email" class="form-control" id="inputemail" required/>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="inputsubject">your subject name</label>
+                            <input type="text" class="form-control" id="inputsubject"/>
+                        </div>
+                        <div class="mb-5 mt-5">
+                            <label for="inputsubject">your complain/feedback</label>
+                            <input type="text" class="form-control" id="inputsubject"/>
+                        </div>
+                    <button class="btn btn-primary" type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="text-center">
+    <i class="fab fa-facebook mx-3 fa-2x" style="color:green;"></i>
+    <i class="fab fa-twitter mx-3 fa-2x" style="color:green;"></i>
+    <i class="fab fa-instagram-square mx-3 fa-2x" style="color:green;"></i>
+    </div>
+</div>   
+{% endblock corecss %}
